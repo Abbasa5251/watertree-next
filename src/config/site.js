@@ -38,19 +38,15 @@ export const siteConfig = {
 			title: "Home",
 		},
 		{
-			href: "/",
+			href: "/why-alkaline-water",
 			title: "Why Alkaline Water?",
 		},
 		{
-			href: "/",
+			href: "/products",
 			title: "Products",
 		},
 		{
-			href: "/",
-			title: "Our Store",
-		},
-		{
-			href: "/",
+			href: "/testimonial",
 			title: "Testimonial",
 		},
 		{
