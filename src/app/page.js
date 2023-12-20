@@ -7,7 +7,7 @@ export default function Home() {
 		<>
 			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-100">
 				<Container className="py-28">
-					<div className="flex flex-col md:flex-row items-center justify-center">
+					<div className="flex flex-col md:flex-row items-center justify-center gap-4">
 						{/* left - image */}
 						<div
 							aria-hidden
@@ -37,7 +37,7 @@ export default function Home() {
 			</section>
 			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-600">
 				<Container className="py-28">
-					<div className="flex flex-col-reverse md:flex-row items-center justify-center">
+					<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-4">
 						{/* Right content */}
 						<div className="text-balance text-center w-1/2">
 							<h1 className="uppercase text-2xl font-bold mb-7 text-blue-50">
@@ -72,7 +72,7 @@ export default function Home() {
 			</section>
 			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-200">
 				<Container className="py-28">
-					<div className="flex flex-col-reverse md:flex-row items-center justify-center">
+					<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-4">
 						{/* Right image */}
 						<div className="text-balance text-center w-1/2">
 							<h1 className="uppercase text-2xl font-bold mb-7 text-blue-900">
