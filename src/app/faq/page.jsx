@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<main className="min-h-screen py-3 px-4 bg-white">
+		<section className="min-h-screen py-3 px-4 bg-white">
 			<Container>
 				<div className="flex flex-col items-center mb-20">
 					<h1 className="text-blue-800 font-bold text-3xl uppercase mb-1">
@@ -58,6 +58,6 @@ export default function Home() {
 					</div>
 				</div>
 			</Container>
-		</main>
+		</section>
 	);
 }

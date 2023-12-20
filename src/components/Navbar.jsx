@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "./Container";
 import { siteConfig } from "@/config/site";
 import { Button } from "./ui/button";
-import { ShoppingCart, Menu, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Image from "next/image";
 
@@ -41,7 +41,7 @@ function Navbar({}) {
 						</Sheet>
 						<Link href={"/"} className="ml-4 lg:ml-0">
 							<Image
-								src="/logo.png"
+								src="/logo-1.png"
 								width={48}
 								height={48}
 								alt="Logo Image"
