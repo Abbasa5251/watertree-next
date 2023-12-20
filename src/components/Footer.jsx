@@ -52,7 +52,10 @@ const Footer = () => {
 							/>
 							<ul className="list-none">
 								{siteConfig.mainNav.map((nav) => (
-									<li className="mb-2 text-base font-normal hover:underline hover:cursor-pointer">
+									<li
+										key={nav.title}
+										className="mb-2 text-base font-normal hover:underline hover:cursor-pointer"
+									>
 										<Link href={nav.href}>{nav.title}</Link>
 									</li>
 								))}
@@ -69,7 +72,10 @@ const Footer = () => {
 							/>
 							<ul className="list-none">
 								{siteConfig.workingHours.map((wh) => (
-									<li className="mb-2 text-base font-normal">
+									<li
+										key={wh.day}
+										className="mb-2 text-base font-normal"
+									>
 										{wh.day}: {wh.hours}
 									</li>
 								))}
