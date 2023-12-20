@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<section className="min-h-screen py-3 px-4 bg-white">
-			<Container>
+		<section className="min-h-screen bg-blue-50">
+			<Container className="py-28">
 				<div className="flex flex-col items-center mb-20">
 					<h1 className="text-blue-800 font-bold text-3xl uppercase mb-1">
 						frequently asked questions

@@ -66,8 +66,10 @@ function Navbar({}) {
 							size={"icon"}
 							aria-label="Contact Us"
 						>
-							<Phone className="h-6 w-6" />
-							<span className="sr-only">contact</span>
+							<Link href="/contact">
+								<Phone className="h-6 w-6" />
+								<span className="sr-only">contact</span>
+							</Link>
 						</Button>
 					</div>
 				</div>
