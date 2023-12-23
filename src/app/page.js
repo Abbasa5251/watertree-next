@@ -21,7 +21,7 @@ export default function Home() {
 								<span>Wellness & Filtration Provider</span>
 							</h1>
 							<p className="mb-4 text-lg font-medium">
-								Proudly serving and delivering to Jonas Road
+								Proudly serving and delivering to Jones Road
 								areas.
 							</p>
 							<Button

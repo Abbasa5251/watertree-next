@@ -87,7 +87,7 @@ const Footer = () => {
 			<Container className={"py-2"}>
 				<div className="flex flex-col md:flex-row gap-x-4 gap-y-2 justify-between items-center">
 					<h1>
-						© All rights reserved 2023. The WaterTree Jonas Road
+						© All rights reserved 2023. The WaterTree Jones Road
 					</h1>
 					<h1>
 						Made with 💙 by{" "}

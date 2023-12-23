@@ -1,6 +1,6 @@
 export const siteConfig = {
-	name: "The Watertree Jonas Road",
-	description: "Jonas Road Alkaline Water Tree Store",
+	name: "The Watertree Jones Road",
+	description: "Jones Road Alkaline Water Tree Store",
 	address: "15850 Champion Forest Dr Spring, TX 77379, United States",
 	workingHours: [
 		{
