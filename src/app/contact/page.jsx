@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/config/site";
@@ -7,7 +8,7 @@ import React from "react";
 const page = () => {
 	return (
 		<>
-			<section className="sm:flex sm:justify-between bg-blue-50">
+			<section className="sm:flex sm:justify-between">
 				<Container className={"py-28"}>
 					<div className="flex flex-col gap-16 items-center justify-center">
 						<p className="text-center text-balance md:mx-36 mx-12">
@@ -68,6 +69,16 @@ const page = () => {
 							</div>
 						</div>
 					</div>
+				</Container>
+			</section>
+			<section className="bg-blue-50">
+				<Container className={"py-28"}>
+					<h1 className="text-center text-lg font-medium text-balance mx-12 md:mx-28 text-blue-900 mb-4">
+						Fill out the form for sales, questions, refills or
+						scheduling a visit to our store located at Jones road,
+						Houston, TX.
+					</h1>
+					<ContactForm className="mx-12" />
 				</Container>
 			</section>
 		</>
