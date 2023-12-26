@@ -74,22 +74,22 @@ const page = () => {
 			<section className="min-h-screen">
 				<Container className="py-28">
 					<div className="flex flex-col items-center justify-center gap-4">
-						<h1 className="uppercase text-4xl font-bold mb-1 text-blue-900">
+						<h1 className="uppercase text-4xl font-bold mb-1 text-blue-900 mx-4">
 							4 Benefits of Drinking Alkaline Water
 						</h1>
 						<Separator
 							orientation="horizontal"
 							className="w-48 bg-blue-500"
 						/>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-7 pt-12">
-							<div class="bg-blue-100 p-4 rounded-lg relative">
-								<div class="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-7 pt-12 mx-8">
+							<div className="bg-blue-100 p-4 rounded-lg relative">
+								<div className="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
 									1
 								</div>
-								<h3 class="font-semibold mb-2">
+								<h3 className="font-semibold mb-2">
 									Restores Ph balance in the body
 								</h3>
-								<p class="text-sm">
+								<p className="text-sm">
 									Alkaline water carries a higher amount of Ph
 									levels than regular bottled water which
 									contributes to reducing the acidity levels
@@ -107,14 +107,14 @@ const page = () => {
 									other waters.
 								</p>
 							</div>
-							<div class="bg-blue-100 p-4 rounded-lg relative">
-								<div class="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
+							<div className="bg-blue-100 p-4 rounded-lg relative">
+								<div className="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
 									2
 								</div>
-								<h3 class="font-semibold mb-2">
+								<h3 className="font-semibold mb-2">
 									Increases Energy levels
 								</h3>
-								<p class="text-sm">
+								<p className="text-sm">
 									In a Newsmax health review, a co-author of
 									the pH Miracle, Robert O. Young expresses
 									that too much acid in the body can result in
@@ -126,14 +126,14 @@ const page = () => {
 									withdrawn.
 								</p>
 							</div>
-							<div class="bg-blue-100 p-4 rounded-lg relative">
-								<div class="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
+							<div className="bg-blue-100 p-4 rounded-lg relative">
+								<div className="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
 									3
 								</div>
-								<h3 class="font-semibold mb-2">
+								<h3 className="font-semibold mb-2">
 									Extra hydrating than other water
 								</h3>
-								<p class="text-sm">
+								<p className="text-sm">
 									Based on the Journal of the International
 									Society of Sports Nutrition, alkaline water
 									has an increasing hydrating effect through
@@ -150,14 +150,14 @@ const page = () => {
 									averaging 3.36%.
 								</p>
 							</div>
-							<div class="bg-blue-100 p-4 rounded-lg relative">
-								<div class="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
+							<div className="bg-blue-100 p-4 rounded-lg relative">
+								<div className="absolute -top-5 -left-5 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center">
 									4
 								</div>
-								<h3 class="font-semibold mb-2">
+								<h3 className="font-semibold mb-2">
 									It can help reduce signs of aging
 								</h3>
-								<p class="text-sm">
+								<p className="text-sm">
 									Almost over half the percentage of our body
 									is of water; water is essential to keeping
 									our organs healthy and functioning

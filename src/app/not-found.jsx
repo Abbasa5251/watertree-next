@@ -8,7 +8,7 @@ const Error = () => {
 	return (
 		<section className="min-h-[32rem] bg-blue-100">
 			<Container className="pt-64 flex flex-col gap-4 items-center justify-center text-center">
-				<h1 class="uppercase tracking-widest font-semibold text-blue-900">
+				<h1 className="uppercase tracking-widest font-semibold text-blue-900">
 					404 | Not Found
 				</h1>
 				<Button

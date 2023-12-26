@@ -14,7 +14,7 @@ const Footer = () => {
 					{/* main div */}
 					<div className="flex flex-col md:flex-row md:items-start items-center justify-center gap-4">
 						{/* left description */}
-						<div className="flex flex-col items-center md:items-start justify-center w-2/4">
+						<div className="flex flex-col items-center md:items-start justify-center w-3/4 md:w-2/4">
 							<div className="flex flex-row items-center justify-center gap-4">
 								<Image
 									src={"/logo.png"}
@@ -42,7 +42,7 @@ const Footer = () => {
 							</Button>
 						</div>
 						{/* Quick links */}
-						<div className="flex flex-col items-start justify-center w-1/4">
+						<div className="flex flex-col items-start justify-center md:w-1/4">
 							<h1 className="mb-1 text-xl font-semibold">
 								Quick Links
 							</h1>
@@ -62,7 +62,7 @@ const Footer = () => {
 							</ul>
 						</div>
 						{/* Working hours */}
-						<div className="flex flex-col items-start justify-center w-1/4">
+						<div className="flex flex-col items-start justify-center md:w-1/4">
 							<h1 className="mb-1 text-xl font-semibold">
 								Hydration Hours
 							</h1>
