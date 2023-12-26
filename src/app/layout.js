@@ -1,10 +1,11 @@
 import "@/app/globals.css";
-import { Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
-import { siteConfig } from "@/config/site";
 import Footer from "@/components/Footer";
+import { Poppins } from "next/font/google";
+import { Separator } from "@/components/ui/separator";
+import { Toaster } from "@/components/ui/toaster";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				<Separator orientation="horizontal" />
 				{children}
+				<Toaster />
 				<Footer />
 			</body>
 		</html>

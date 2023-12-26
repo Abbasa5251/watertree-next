@@ -2,6 +2,8 @@ export const siteConfig = {
 	name: "The Watertree Jones Road",
 	description: "Jones Road Alkaline Water Tree Store",
 	address: "15850 Champion Forest Dr Spring, TX 77379, United States",
+	contactNumber: "+1123456789",
+	emailAddress: "info@waterjonesrd.com",
 	workingHours: [
 		{
 			day: "Mon",
