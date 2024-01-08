@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Menu, Phone } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Image from "next/image";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 function Navbar({}) {
 	return (
@@ -61,16 +62,21 @@ function Navbar({}) {
 						))}
 					</nav>
 					<div className="flex items-center space-x-3">
-						<Button
-							variant={"ghost"}
-							size={"icon"}
-							aria-label="Contact Us"
-						>
-							<Link href="/contact">
-								<Phone className="h-6 w-6" />
-								<span className="sr-only">contact</span>
-							</Link>
-						</Button>
+						<Tooltip>
+							<TooltipTrigger asChild>
+								<Button
+									variant={"ghost"}
+									size={"icon"}
+									aria-label="Contact Us"
+								>
+									<Link href="/contact">
+										<Phone className="h-6 w-6" />
+										<span className="sr-only">contact</span>
+									</Link>
+								</Button>
+							</TooltipTrigger>
+							<TooltipContent>Contact</TooltipContent>
+						</Tooltip>
 					</div>
 				</div>
 			</Container>

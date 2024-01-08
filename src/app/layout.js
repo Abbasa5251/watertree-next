@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -24,11 +25,13 @@ export default function RootLayout({ children }) {
 				<link rel="icon" href="/favicon.ico" sizes="any" />
 			</head>
 			<body className={cn(poppins.className)}>
-				<Navbar />
-				<Separator orientation="horizontal" />
-				{children}
-				<Toaster />
-				<Footer />
+				<TooltipProvider>
+					<Navbar />
+					<Separator orientation="horizontal" />
+					{children}
+					<Toaster />
+					<Footer />
+				</TooltipProvider>
 			</body>
 		</html>
 	);
