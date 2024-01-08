@@ -48,8 +48,8 @@ export const siteConfig = {
 			title: "Products",
 		},
 		{
-			href: "/testimonial",
-			title: "Testimonial",
+			href: "/testimonials",
+			title: "Testimonials",
 		},
 		{
 			href: "/faq",
