@@ -68,6 +68,10 @@ const page = () => {
 								</ul>
 							</div>
 						</div>
+						<div
+							aria-hidden
+							className="md:bg-contain bg-center bg-contain bg-no-repeat w-3/4 md:w-1/2 h-72 md:h-96 bg-[url('/images/shop-image.jpg')] mix-blend-multiply"
+						/>
 					</div>
 				</Container>
 			</section>
