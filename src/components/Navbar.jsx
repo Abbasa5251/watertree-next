@@ -69,10 +69,10 @@ function Navbar({}) {
 									size={"icon"}
 									aria-label="Contact Us"
 								>
-									<Link href="/contact">
+									<a href={`tel:${siteConfig.contactNumber}`}>
 										<Phone className="h-6 w-6" />
 										<span className="sr-only">contact</span>
-									</Link>
+									</a>
 								</Button>
 							</TooltipTrigger>
 							<TooltipContent>Contact</TooltipContent>
