@@ -21,6 +21,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "country-state-city": "^3.2.1",
+    "embla-carousel-react": "^8.0.0-rc20",
     "libphonenumber-js": "^1.10.52",
     "lucide-react": "^0.298.0",
     "next": "13.5.6",
