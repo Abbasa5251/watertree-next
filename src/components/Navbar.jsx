@@ -12,7 +12,6 @@ import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
-	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -78,13 +77,9 @@ function Navbar({}) {
 						</Link>
 					</div>
 					<nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden md:block text-blue-900">
-						{siteConfig.mainNav.map((route) =>
+						{siteConfig.mainNav.map((route, idx) =>
 							!route.subMenu ? (
-								<Button
-									key={route.title}
-									asChild
-									variant="ghost"
-								>
+								<Button key={idx} asChild variant="ghost">
 									<Link
 										href={route.href}
 										className="text-lg font-semibold transition-colors hover:bg-blue-100"
@@ -93,7 +88,7 @@ function Navbar({}) {
 									</Link>
 								</Button>
 							) : (
-								<DropdownMenu>
+								<DropdownMenu key={idx}>
 									<DropdownMenuTrigger
 										asChild
 										className="focus:"
@@ -112,11 +107,11 @@ function Navbar({}) {
 										</Button>
 									</DropdownMenuTrigger>
 									<DropdownMenuContent>
-										{route.subMenuItems.map((item, idx) => (
-											<>
+										{route.subMenuItems.map(
+											(item, index) => (
 												<DropdownMenuItem
+													key={index}
 													asChild
-													key={idx}
 													className="last:mb-0 mb-2"
 												>
 													<Link
@@ -126,9 +121,8 @@ function Navbar({}) {
 														{item.title}
 													</Link>
 												</DropdownMenuItem>
-												{/* <DropdownMenuSeparator /> */}
-											</>
-										))}
+											)
+										)}
 									</DropdownMenuContent>
 								</DropdownMenu>
 							)
