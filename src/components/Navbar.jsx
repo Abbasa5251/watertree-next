@@ -82,28 +82,20 @@ function Navbar({}) {
 								<Button key={idx} asChild variant="ghost">
 									<Link
 										href={route.href}
-										className="text-lg font-semibold transition-colors hover:bg-blue-100"
+										className="font-semibold transition-colors hover:bg-blue-100"
 									>
 										{route.title}
 									</Link>
 								</Button>
 							) : (
 								<DropdownMenu key={idx}>
-									<DropdownMenuTrigger
-										asChild
-										className="focus:"
-									>
+									<DropdownMenuTrigger asChild>
 										<Button
 											key={route.title}
-											asChild
 											variant="ghost"
+											className="font-semibold transition-colors hover:bg-blue-100"
 										>
-											<Link
-												href={route.href}
-												className="text-lg font-semibold transition-colors hover:bg-blue-100"
-											>
-												{route.title}
-											</Link>
+											{route.title}
 										</Button>
 									</DropdownMenuTrigger>
 									<DropdownMenuContent>
