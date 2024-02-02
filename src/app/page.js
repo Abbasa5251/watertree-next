@@ -22,8 +22,9 @@ export default function Home() {
 				}}
 			>
 				<CarouselContent>
-					{images.map((image) => (
+					{images.map((image, idx) => (
 						<CarouselItem
+							key={idx}
 							className={`md:bg-contain bg-center bg-contain bg-no-repeat w-full md:w-1/2 h-72 md:h-96`}
 							style={{
 								backgroundImage: `url(${image})`,
