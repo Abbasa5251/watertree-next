@@ -38,18 +38,41 @@ export const siteConfig = {
 		{
 			href: "/",
 			title: "Home",
+			subMenu: false,
 		},
 		{
 			href: "/why-alkaline-water",
 			title: "Why Alkaline Water?",
+			subMenu: false,
+		},
+		{
+			href: "/products",
+			title: "Products",
+			subMenu: true,
+			subMenuItems: [
+				{
+					title: "Alkaline Bottled Water",
+					href: "/products",
+				},
+				{
+					title: "Alkaline Water Products",
+					href: "/products/water-products",
+				},
+				{
+					title: "Water Filtration System",
+					href: "/products/water-filtration",
+				},
+			],
 		},
 		{
 			href: "/testimonials",
 			title: "Testimonials",
+			subMenu: false,
 		},
 		{
 			href: "/faq",
 			title: "FAQs",
+			subMenu: false,
 		},
 	],
 	links: {
