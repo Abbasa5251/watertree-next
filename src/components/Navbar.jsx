@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Container from "./Container";
@@ -7,6 +8,16 @@ import { Menu, Phone } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Image from "next/image";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import {
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuIndicator,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+	NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 
 function Navbar({}) {
 	return (
@@ -23,17 +34,17 @@ function Navbar({}) {
 								className="w-[300px] sm:w-[400px]"
 							>
 								<nav className="flex flex-col gap-4 mt-14">
-									{siteConfig.mainNav.map((route) => (
+									{siteConfig.mainNav.map((menu) => (
 										<Button
-											key={route.title}
+											key={menu.title}
 											asChild
 											variant="ghost"
 										>
 											<Link
-												href={route.href}
+												href={menu.href}
 												className="text-sm font-medium transition-colors"
 											>
-												{route.title}
+												{menu.title}
 											</Link>
 										</Button>
 									))}
@@ -49,18 +60,53 @@ function Navbar({}) {
 							/>
 						</Link>
 					</div>
-					<nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden md:block text-blue-900">
-						{siteConfig.mainNav.map((route) => (
-							<Button key={route.title} asChild variant="ghost">
-								<Link
-									href={route.href}
-									className="text-lg font-semibold transition-colors hover:bg-blue-100"
-								>
-									{route.title}
-								</Link>
-							</Button>
-						))}
-					</nav>
+					<NavigationMenu className="mx-6 items-center space-x-4 lg:space-x-6 hidden md:block text-blue-900">
+						<NavigationMenuList>
+							<NavigationMenuItem>
+								{siteConfig.mainNav.map((menu) =>
+									!menu.subMenu ? (
+										<Button
+											key={menu.title}
+											asChild
+											variant="ghost"
+										>
+											<Link
+												href={menu.href}
+												className="text-lg font-semibold transition-colors hover:bg-blue-100"
+											>
+												{menu.title}
+											</Link>
+										</Button>
+									) : (
+										<>
+											<NavigationMenuTrigger className="text-lg font-semibold transition-colors">
+												{menu.title}
+											</NavigationMenuTrigger>
+											<NavigationMenuContent>
+												{menu.subMenuItems.map(
+													(item) => (
+														<Button
+															key={item.title}
+															asChild
+															variant="ghost"
+															className="w-full justify-start"
+														>
+															<Link
+																href={item.href}
+																className="text-lg font-semibold transition-colors"
+															>
+																{item.title}
+															</Link>
+														</Button>
+													)
+												)}
+											</NavigationMenuContent>
+										</>
+									)
+								)}
+							</NavigationMenuItem>
+						</NavigationMenuList>
+					</NavigationMenu>
 					<div className="flex items-center space-x-3">
 						<Tooltip>
 							<TooltipTrigger asChild>
