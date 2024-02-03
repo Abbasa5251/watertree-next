@@ -121,8 +121,9 @@ const page = () => {
 								range of 9-9.5, decrease the ORP range to -350
 								to -400, add up to 100% more oxygen to your
 								water, and create micro-cluster water molecules.
-								Installs under your kitchen sink. It's portable
-								so you can take it with you to any location.
+								Installs under your kitchen sink. It&apos;s
+								portable so you can take it with you to any
+								location.
 							</p>
 							<p className="mb-4 text-lg font-medium">
 								What Are the Benefits?

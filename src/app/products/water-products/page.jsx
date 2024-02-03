@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Container from "@/components/Container";
 import ProductsBanner from "@/components/ProductsBanner";
+import { siteConfig } from "@/config/site";
 
 const page = () => {
 	return (
@@ -142,7 +143,7 @@ const page = () => {
 							<p className="mb-4 text-lg font-normal">
 								The Dream Pitcher is convenient, portable and
 								effective, and is a great addition to the Water
-								Tree Family product line. It wasn't easy
+								Tree Family product line. It wasn&apos;t easy
 								developing a pitcher that could filter your “tap
 								water” and at the same time create alkaline,
 								antioxidant water but the Water Tree research
@@ -162,11 +163,12 @@ const page = () => {
 								Water!
 							</p>
 							<p className="mb-4 text-lg font-normal">
-								That's not all it will do, it will also make
-								that same water “antibacterial!” After the water
-								has been in the pitcher for at least one hour
-								the water will take on properties very similar
-								to our antibacterial Power Stix but a little.
+								That&apos;s not all it will do, it will also
+								make that same water “antibacterial!” After the
+								water has been in the pitcher for at least one
+								hour the water will take on properties very
+								similar to our antibacterial Power Stix but a
+								little.
 							</p>
 							<Button
 								asChild
@@ -226,7 +228,8 @@ const page = () => {
 								and irritation from insect bites and stings. And
 								a few sprays after meals or drinking acidic
 								beverages (like coffee or soda) promotes fresher
-								breath and rebalances your mouth's pH levels!
+								breath and rebalances your mouth&apos;s pH
+								levels!
 							</p>
 							<Button
 								asChild
@@ -250,16 +253,16 @@ const page = () => {
 							<p className="mb-1 text-lg font-normal">
 								When you use the Water Tree Anion Power Shower
 								for the first time, it creates an experience you
-								won't soon forget. The filter inside removes
-								harmful chlorine on contact adds natural
+								won&apos;t soon forget. The filter inside
+								removes harmful chlorine on contact adds natural
 								moisturizers that can relieve skin irritations
 								while adding an exciting citrus aroma. The
 								result is a natural vitamin C, aromatherapy
-								shower experience. We don't stop there, to add
-								to the magic, the treated water travels through
-								our patented plate design that emits over
-								400,000 negative ions at a rate of more than
-								400,000 per cm.
+								shower experience. We don&apos;t stop there, to
+								add to the magic, the treated water travels
+								through our patented plate design that emits
+								over 400,000 negative ions at a rate of more
+								than 400,000 per cm.
 							</p>
 							<p className="mb-1 text-lg font-normal">
 								The design of the Anion Shower Plate is a
@@ -363,18 +366,18 @@ const page = () => {
 								Alkaline Antioxidant Balls will add more oxygen
 								to your water. They are great to add to your
 								sports bottle and even your Water Tree Power
-								Pitcher. They'll last for up to six months.
+								Pitcher. They&apos;ll last for up to six months.
 							</p>
 							<p className="mb-4 text-lg font-normal">
-								These are a great option for when you're on the
-								go and run out of your Alkaline Antioxidant
+								These are a great option for when you&apos;re on
+								the go and run out of your Alkaline Antioxidant
 								Water. All you do is simply add your Alkaline
 								Antioxidant Balls to any purified bottled water.
 								Once you add the water, you shake vigorously for
 								a few seconds, wait three to four minutes, and
-								you'll have great tasting alkaline drinking
-								water. Contact Water Tree Champion Forest today
-								for current pricing.
+								you&apos;ll have great tasting alkaline drinking
+								water. Contact {siteConfig.name} today for
+								current pricing.
 							</p>
 							<Button
 								asChild

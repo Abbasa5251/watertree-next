@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import Review from "@/components/Review";
 import { Separator } from "@/components/ui/separator";
 import { reviews } from "@/config/reviews";
+import { siteConfig } from "@/config/site";
 import React from "react";
 
 const Testimonials = () => {
@@ -20,8 +21,8 @@ const Testimonials = () => {
 						<p className="font-medium mx-12 text-center text-pretty">
 							See what our customers have to say about our
 							alkaline water products and water filtration
-							systems. Contact Water Tree Champion Forest today
-							for a FREE basic water testing.
+							systems. Contact {siteConfig.name} today for a FREE
+							basic water testing.
 						</p>
 					</div>
 				</Container>

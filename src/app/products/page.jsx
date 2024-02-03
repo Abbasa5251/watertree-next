@@ -23,10 +23,9 @@ const page = () => {
 							Water stripped of its nutrients is often left highly
 							acidic. Antioxidant alkaline water raises the pH of
 							your body so that it can function as it was made to
-							function. The water at Water Tree, located in
-							Champion Forest, TX, is filtered naturally with a
-							ceramic conversion process- not through electrical
-							ionizers.
+							function. The water at Water Tree is filtered
+							naturally with a ceramic conversion process - not
+							through electrical ionizers.
 						</p>
 					</div>
 				</Container>
