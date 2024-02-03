@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Container from "./Container";
@@ -7,6 +8,12 @@ import { Menu, Phone } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Image from "next/image";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function Navbar({}) {
 	return (
@@ -23,20 +30,40 @@ function Navbar({}) {
 								className="w-[300px] sm:w-[400px]"
 							>
 								<nav className="flex flex-col gap-4 mt-14">
-									{siteConfig.mainNav.map((route) => (
-										<Button
-											key={route.title}
-											asChild
-											variant="ghost"
-										>
-											<Link
-												href={route.href}
-												className="text-sm font-medium transition-colors"
+									{siteConfig.mainNav.map((route, idx) => {
+										if (route.subMenu) {
+											return route.subMenuItems.map(
+												(item) => (
+													<Button
+														key={item.title}
+														asChild
+														variant="ghost"
+													>
+														<Link
+															href={item.href}
+															className="text-sm font-medium transition-colors"
+														>
+															{item.title}
+														</Link>
+													</Button>
+												)
+											);
+										}
+										return (
+											<Button
+												key={idx}
+												asChild
+												variant="ghost"
 											>
-												{route.title}
-											</Link>
-										</Button>
-									))}
+												<Link
+													href={route.href}
+													className="text-sm font-medium transition-colors"
+												>
+													{route.title}
+												</Link>
+											</Button>
+										);
+									})}
 								</nav>
 							</SheetContent>
 						</Sheet>
@@ -50,16 +77,48 @@ function Navbar({}) {
 						</Link>
 					</div>
 					<nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden md:block text-blue-900">
-						{siteConfig.mainNav.map((route) => (
-							<Button key={route.title} asChild variant="ghost">
-								<Link
-									href={route.href}
-									className="text-lg font-semibold transition-colors hover:bg-blue-100"
-								>
-									{route.title}
-								</Link>
-							</Button>
-						))}
+						{siteConfig.mainNav.map((route, idx) =>
+							!route.subMenu ? (
+								<Button key={idx} asChild variant="ghost">
+									<Link
+										href={route.href}
+										className="font-semibold transition-colors hover:bg-blue-100"
+									>
+										{route.title}
+									</Link>
+								</Button>
+							) : (
+								<DropdownMenu key={idx}>
+									<DropdownMenuTrigger asChild>
+										<Button
+											key={route.title}
+											variant="ghost"
+											className="font-semibold transition-colors hover:bg-blue-100"
+										>
+											{route.title}
+										</Button>
+									</DropdownMenuTrigger>
+									<DropdownMenuContent>
+										{route.subMenuItems.map(
+											(item, index) => (
+												<DropdownMenuItem
+													key={index}
+													asChild
+													className="last:mb-0 mb-2"
+												>
+													<Link
+														href={item.href}
+														className="text-lg font-semibold transition-colors hover:bg-blue-100"
+													>
+														{item.title}
+													</Link>
+												</DropdownMenuItem>
+											)
+										)}
+									</DropdownMenuContent>
+								</DropdownMenu>
+							)
+						)}
 					</nav>
 					<div className="flex items-center space-x-3">
 						<Tooltip>
