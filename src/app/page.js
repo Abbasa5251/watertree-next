@@ -9,33 +9,39 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 
-const images = ["/images/desktop-water.webp", "/images/alkaline-water.png"];
+const images = [
+	"/images/desktop-water.webp",
+	"images/header-02.png",
+	"images/header-03.png",
+];
 
 export default function Home() {
 	return (
 		<>
-			<Carousel
-				className="py-9"
-				opts={{
-					align: "center",
-					loop: true,
-				}}
-			>
-				<CarouselContent>
-					{images.map((image, idx) => (
-						<CarouselItem
-							key={idx}
-							className={`md:bg-contain bg-center bg-contain bg-no-repeat w-full md:w-1/2 h-72 md:h-96`}
-							style={{
-								backgroundImage: `url(${image})`,
-							}}
-						/>
-					))}
-				</CarouselContent>
-				<CarouselPrevious className="left-20 hover:bg-blue-800 hover:text-blue-100" />
-				<CarouselNext className="right-20 hover:bg-blue-800 hover:text-blue-100" />
-			</Carousel>
-			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-100">
+			<section className="py-3 px-4 bg-blue-100">
+				<Carousel
+					className="py-9"
+					opts={{
+						align: "center",
+						loop: true,
+					}}
+				>
+					<CarouselContent>
+						{images.map((image, idx) => (
+							<CarouselItem
+								key={idx}
+								className={`md:bg-contain bg-center bg-contain bg-no-repeat w-full md:w-1/2 h-72 md:h-96`}
+								style={{
+									backgroundImage: `url(${image})`,
+								}}
+							/>
+						))}
+					</CarouselContent>
+					<CarouselPrevious className="left-20 hover:bg-blue-800 hover:text-blue-100" />
+					<CarouselNext className="right-20 hover:bg-blue-800 hover:text-blue-100" />
+				</Carousel>
+			</section>
+			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-50">
 				<Container className="py-28">
 					<div className="flex flex-col md:flex-row items-center justify-center gap-4">
 						{/* left - image */}
