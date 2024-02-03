@@ -1,12 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Container from "@/components/Container";
 import { Separator } from "@/components/ui/separator";
+import Container from "@/components/Container";
+import ProductsBanner from "@/components/ProductsBanner";
 
 const page = () => {
 	return (
 		<>
+			<ProductsBanner heading={"Our Products"} />
 			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-50">
 				<Container className="pt-28">
 					<div className="flex flex-col items-center mb-20">
@@ -101,14 +103,14 @@ const page = () => {
 							<p className="mb-4 text-lg font-medium">
 								What are the Benefits:
 							</p>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								This process is a completely natural filtration
 								system that utilizes “Far Infrared” technology
 								that generates an electromagnetic wave that
 								ultimately creates alkaline or antioxidant water
 								to help you maintain youthfulness and health.
 							</p>
-							<p className="mb-4 text-base">
+							<p className="mb-4 text-lg font-normal">
 								Our secret is our patented process that utilizes
 								hydrogen, activated ceramics, and a
 								state-of-the-art system that naturally removes
@@ -149,7 +151,7 @@ const page = () => {
 							<p className="mb-4 text-lg font-medium">
 								Easy to use
 							</p>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								The Dream Pitcher will filter up to 75 gallons
 								of your tap (or bottled) water and in about 15
 								minutes will transform that water into the kind
@@ -159,8 +161,8 @@ const page = () => {
 								It will create alkaline, antioxidant; Water Tree
 								Water!
 							</p>
-							<p className="mb-4 text-base">
-								That’s not all it will do, it will also make
+							<p className="mb-4 text-lg font-normal">
+								That's not all it will do, it will also make
 								that same water “antibacterial!” After the water
 								has been in the pitcher for at least one hour
 								the water will take on properties very similar
@@ -209,7 +211,7 @@ const page = () => {
 							<p className="mb-4 text-lg font-medium">
 								What are the Benefits?
 							</p>
-							<p className="mb-4 text-base">
+							<p className="mb-4 text-lg font-normal">
 								Water Tree is committed to offering you a
 								healthier way of life, so you can be assured
 								that our range of DT antioxidant sprays contain
@@ -245,7 +247,7 @@ const page = () => {
 							<h1 className="uppercase text-4xl font-bold mb-7 text-blue-900 text-center">
 								Anion 1 and 2 Shower Head
 							</h1>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								When you use the Water Tree Anion Power Shower
 								for the first time, it creates an experience you
 								won't soon forget. The filter inside removes
@@ -259,7 +261,7 @@ const page = () => {
 								400,000 negative ions at a rate of more than
 								400,000 per cm.
 							</p>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								The design of the Anion Shower Plate is a
 								low-flow shower head, which is a great
 								money-saver. High-quality shower heads like the
@@ -269,7 +271,7 @@ const page = () => {
 								is heated water, you also save the energy to
 								heat it.
 							</p>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								This sophisticated technology combines to create
 								a “SOFT” negative ion waterfall effect that is
 								refreshing, relaxing, and has been known in some
@@ -280,7 +282,7 @@ const page = () => {
 								from negative ions. The patented plate design is
 								the “key” to relief.
 							</p>
-							<p className="mb-4 text-base">
+							<p className="mb-4 text-lg font-normal">
 								The patented plate is removable and should be
 								cleaned regularly to remove debris that can
 								collect in the holes of the plate. This debris
@@ -357,13 +359,13 @@ const page = () => {
 							<h1 className="text-4xl font-bold uppercase text-blue-900 mb-7 text-center">
 								<span>Alkaline Antioxidant Balls</span>
 							</h1>
-							<p className="mb-1 text-base">
+							<p className="mb-1 text-lg font-normal">
 								Alkaline Antioxidant Balls will add more oxygen
 								to your water. They are great to add to your
 								sports bottle and even your Water Tree Power
 								Pitcher. They'll last for up to six months.
 							</p>
-							<p className="mb-4 text-base">
+							<p className="mb-4 text-lg font-normal">
 								These are a great option for when you're on the
 								go and run out of your Alkaline Antioxidant
 								Water. All you do is simply add your Alkaline

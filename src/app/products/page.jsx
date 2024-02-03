@@ -1,12 +1,14 @@
-import Container from "@/components/Container";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import React from "react";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import Container from "@/components/Container";
+import ProductsBanner from "@/components/ProductsBanner";
 
 const page = () => {
 	return (
 		<>
+			<ProductsBanner heading={"Our Products"} />
 			<section className="sm:flex sm:justify-between py-3 px-4 bg-blue-50">
 				<Container className="pt-28 pb-14">
 					<div className="flex flex-col items-center mb-20">
@@ -42,7 +44,7 @@ const page = () => {
 							<h1 className="text-4xl font-bold uppercase text-blue-900 mb-7 text-center">
 								<span>Refill & Bottled Water</span>
 							</h1>
-							<p className="mb-4 text-lg font-medium">
+							<p className="mb-4 text-lg font-normal">
 								Water Refills:
 							</p>
 							<ul className="list-disc mb-4">
@@ -53,7 +55,7 @@ const page = () => {
 									Enriched with more Hydrogen.
 								</li>
 							</ul>
-							<p className="mb-4 text-lg font-medium">
+							<p className="mb-4 text-lg font-normal">
 								Benefits of Hydrogen Water:
 							</p>
 							<ul className="list-disc mb-4">
@@ -88,7 +90,7 @@ const page = () => {
 							<h1 className="uppercase text-4xl font-bold mb-7 text-blue-900 text-center">
 								Bottled Water
 							</h1>
-							<p className="mb-4 text-lg font-medium">
+							<p className="mb-4 text-lg font-normal">
 								Bottled Water (16.9 oz bottles, 1.5 Lt bottles)
 							</p>
 							<ul className="list-disc mb-4">
@@ -127,7 +129,7 @@ const page = () => {
 							<h1 className="text-4xl font-bold uppercase text-blue-900 mb-7 text-center">
 								<span>Gallon Water</span>
 							</h1>
-							<p className="mb-4 text-lg font-medium">
+							<p className="mb-4 text-lg font-normal">
 								Gallon Water
 							</p>
 							<ul className="list-disc mb-4">
