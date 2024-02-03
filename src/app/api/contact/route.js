@@ -39,12 +39,14 @@ export async function POST(request) {
 			JSON.stringify({
 				message: "Form data stored successfully",
 				records,
-			})
+			}),
+			{ status: 200 }
 		);
 	} catch (error) {
 		console.error("Error storing data in Airtable", error);
 		return new Response(
-			JSON.stringify({ error: "Failed to store form data" })
+			JSON.stringify({ error: "Failed to store form data" }),
+			{ status: 500 }
 		);
 	}
 }

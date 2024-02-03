@@ -113,12 +113,19 @@ const ContactForm = ({ className }) => {
 			},
 			body: JSON.stringify(values),
 		});
-		const data = await res.json();
-		console.log("data - ", data);
-		toast({
-			title: "Success",
-			description: "Your form has been submitted successfully",
-		});
+		if (res.status == 200) {
+			toast({
+				title: "Success",
+				description: "Your form has been submitted successfully",
+			});
+		} else {
+			toast({
+				variant: "destructive",
+				title: "Error",
+				description:
+					"There was an error submitting form, please try again",
+			});
+		}
 		form.reset();
 	}
 
