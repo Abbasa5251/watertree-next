@@ -105,12 +105,27 @@ const ContactForm = ({ className }) => {
 		return `https://cdn.ipregistry.co/flags/emojitwo/${isoCode.toLowerCase()}.svg`; // Example flag image URL
 	};
 
-	function onSubmit(values) {
-		toast({
-			title: "Success",
-			description: "Your form has been submitted successfully",
+	async function onSubmit(values) {
+		const res = await fetch("/api/contact", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(values),
 		});
-		console.log(values);
+		if (res.status == 200) {
+			toast({
+				title: "Success",
+				description: "Your form has been submitted successfully",
+			});
+		} else {
+			toast({
+				variant: "destructive",
+				title: "Error",
+				description:
+					"There was an error submitting form, please try again",
+			});
+		}
 		form.reset();
 	}
 
